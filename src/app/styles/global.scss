@@ -1,0 +1,12 @@
+/**
+ * Global styles
+ */
+
+@import "~@signify/interact-ui/styles/themes/theme";
+@import "variables";
+
+@include theme-builder($theme);
+
+body {
+  height: 100%;
+}

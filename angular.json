@@ -46,6 +46,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@signify/interact-ui/styles/config/_font.scss",
               "src/styles.scss"
             ],
             "scripts": [],

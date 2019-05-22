@@ -1,0 +1,121 @@
+/**
+ * Timeline
+ */
+
+@import "../styles/variables";
+
+:host {
+  background: $color-bg-high;
+  box-shadow: $shadow-1;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+// Axis
+// -----------------
+
+.axis-holder {
+  box-shadow: $shadow-1;
+  height: $timeline-height;
+  overflow: hidden;
+  position: relative;
+}
+
+.axis-label {
+  position: absolute;
+    top: 0;
+
+  &::before {
+    background: currentColor;
+    content: '';
+    position: absolute;
+      left: 0;
+      top: 0;
+    height: $size-4;
+    width: $border-width;
+  }
+}
+
+.axis-year {
+  @include text-body('xs');
+
+  background: $color-bg-high;
+  display: block;
+  margin-top: $size-4;
+  transform: translate3d(-50%, 0, 0);
+  white-space: nowrap;
+}
+
+.current-date {
+  background: $color-icon-warning;
+  pointer-events: none;
+  position: absolute;
+    top: $control-height;
+    bottom: 0;
+  width: $border-width;
+}
+
+// Rulers
+// -----------------
+
+.state-selector {
+  display: flex;
+    justify-content: flex-end;
+
+  /deep/ label {
+    margin-right: $size-24;
+  }
+}
+
+.state {
+  @include text-body('xs');
+
+  overflow: hidden;
+  position: relative;
+  height: get-one-line-height('xs');
+}
+
+.ruler {
+  color: $color-icon-on-dark;
+  opacity: .3;
+  overflow: hidden;
+  position: absolute;
+    top: 0;
+    bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+
+  &.current {
+    min-width: min-content;
+    opacity: 1;
+    overflow: visible;
+    z-index: 1;
+  }
+}
+
+@for $i from 0 through 30 {
+  $color: map_get($state, $i % 6);
+  $weight: 150, 120, 100;
+
+  .state-#{$i} {
+    background: map_get($color, 20);
+
+    @for $r from 0 through 30 {
+      .ruler-#{$r} {
+        background: map_get($color, nth($weight, $r % 3 + 1));
+      }
+    }
+  }
+}
+
+
+// Media query
+// ---------------------------
+
+@media (max-device-width: $lg-break) {
+
+  .state-selector {
+    display: none;
+  }
+}

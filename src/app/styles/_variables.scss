@@ -1,0 +1,20 @@
+/**
+ * Style configurations
+ */
+@import "~@signify/interact-ui/styles/config/mixins";
+@import "~@signify/interact-ui/styles/config/light-theme";
+
+$theme: $light-theme;
+
+$state: (
+  0: $magenta,
+  1: $aqua,
+  2: $lime-green,
+  3: $purple,
+  4: $light-blue,
+  5: $blue
+);
+
+$lg-break: 42rem;
+
+$timeline-height: $size-56;

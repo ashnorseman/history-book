@@ -1,0 +1,9 @@
+<t-text [currentYear]="currentYear"
+        [startYear]="startYear"
+        [endYear]="endYear"
+        (selectYear)="timeline.markYear($event)"></t-text>
+
+<t-timeline #timeline
+            [startYear]="startYear"
+            [endYear]="endYear"
+            (setYear)="viewByYear($event)"></t-timeline>

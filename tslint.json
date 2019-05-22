@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier",
+    "codelyzer"
+  ],
+  "rules": {
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "lowercase-last",
+        "named-imports-order": "lowercase-last"
+      }
+    ],
+    "no-bitwise": false,
+    "no-console": [true, "log"],
+    "no-unused-variable": true,
+    "object-literal-sort-keys": false
+  }
+}

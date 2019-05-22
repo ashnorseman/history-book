@@ -1,0 +1,25 @@
+<label class="font-toggle form-checkbox form-checkbox-primary">
+  <input type="checkbox"
+         [checked]="useXiaozhuan"
+         (change)="useXiaozhuan = !useXiaozhuan">
+  <span></span>
+</label>
+
+<section *ngFor="let ruler of rulers">
+  <h2>{{ruler.title}}</h2>
+
+  <ng-container *ngFor="let groupedText of fetchTextByRuler(ruler)">
+    <h3 [id]="'year-' + groupedText.yearNumber"
+        [attr.data-year]="groupedText.yearNumber">
+      {{groupedText.year}} (前{{-groupedText.yearNumber}}年)
+    </h3>
+
+    <h4>經</h4>
+
+    <pre [innerHTML]="groupedText.jing"></pre>
+
+    <h4>傳</h4>
+
+    <pre [innerHTML]="groupedText.zhuan"></pre>
+  </ng-container>
+</section>

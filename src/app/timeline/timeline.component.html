@@ -1,0 +1,40 @@
+<div class="states-holder">
+  <ia-check-list class="state-selector"
+                 [data]="states"
+                 [(ngModel)]="selectedStates"></ia-check-list>
+
+  <ul class="states">
+    <li *ngFor="let state of selectedStates; let si = index;"
+        class="state"
+        [ngClass]="'state-' + si">
+    <span *ngFor="let ruler of rulersByState.get(state); let ri = index"
+          class="ruler"
+          [class.current]="isCurrentRuler(ruler, (currentDate$ | async)?.year)"
+          [ngClass]="'ruler-' + ri"
+          [style.left.%]="getYearPercent(ruler.reignStart)"
+          [style.right.%]="100 - getYearPercent(ruler.reignEnd + 1)"
+          [iaTooltip]="ruler.title"
+          (click)="setYear.emit(ruler.reignStart)">{{ruler.title}}</span>
+    </li>
+  </ul>
+</div>
+
+<div class="axis-holder"
+     (click)="setCurrentYear()"
+     (mouseleave)="hideYearTooltip()"
+     (mousemove)="showYearTooltip($event)"
+     (touchmove)="showYearTooltipTouch($event)"
+     (touchend)="hideYearTooltip()"
+     (touchcancel)="hideYearTooltip()">
+  <ul class="axis">
+    <li *ngFor="let item of axisLabelYears"
+        class="axis-label"
+        [style.left.%]="item.percent">
+      <span class="axis-year">{{item.yearText}}</span>
+    </li>
+  </ul>
+</div>
+
+<span *ngIf="currentDate$ | async"
+      class="current-date"
+      [style.left.%]="(currentDate$ | async).percent"></span>
