@@ -5,28 +5,7 @@
 @import "styles/variables";
 
 :host {
-  display: flex;
-    flex-flow: column;
   flex: 1;
   height: 100%;
-}
-
-t-text {
-  flex: 1;
-}
-
-@media (max-device-width: $lg-break) {
-
-  :host {
-    display: block;
-    height: auto;
-    padding-bottom: $timeline-height + $control-height + $size-24;
-  }
-
-  t-timeline {
-    position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-  }
+  padding-top: $navigation-bar-height;
 }

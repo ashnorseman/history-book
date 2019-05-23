@@ -14,8 +14,8 @@ import {
   SimpleChanges
 } from '@angular/core';
 
-import { paragraphs } from '../data/full-text';
 import { allRulers } from '../data/rulers';
+import { paragraphs } from '../data/zuozhuan';
 import { IParagraph } from '../interfaces/i-paragraph';
 import { IRuler } from '../interfaces/i-ruler';
 

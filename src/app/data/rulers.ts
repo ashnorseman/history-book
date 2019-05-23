@@ -6,6 +6,342 @@ import { IRuler } from '../interfaces/i-ruler';
 
 export const allRulers: IRuler[] = [
   {
+    state: '夏',
+    title: '',
+    givenName: '禹',
+    reignStart: -1989,
+    reignEnd: -1982
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '启',
+    reignStart: -1978,
+    reignEnd: -1963
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '康',
+    reignStart: -1958,
+    reignEnd: -1955
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '康',
+    reignStart: -1952,
+    reignEnd: -1946
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '相',
+    reignStart: -1943,
+    reignEnd: -1916
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '“无王”时期',
+    reignStart: -1915,
+    reignEnd: -1876
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '康',
+    reignStart: -1875,
+    reignEnd: -1855
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '杼',
+    reignStart: -1852,
+    reignEnd: -1836
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '槐',
+    reignStart: -1833,
+    reignEnd: -1790
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '芒',
+    reignStart: -1789,
+    reignEnd: -1732
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '泄',
+    reignStart: -1730,
+    reignEnd: -1706
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '不降',
+    reignStart: -1702,
+    reignEnd: -1644
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '扃',
+    reignStart: -1643,
+    reignEnd: -1626
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '廑',
+    reignStart: -1622,
+    reignEnd: -1615
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '孔甲',
+    reignStart: -1612,
+    reignEnd: -1604
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '皋',
+    reignStart: -1601,
+    reignEnd: -1599
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '发',
+    reignStart: -1596,
+    reignEnd: -1590
+  },
+  {
+    state: '夏',
+    title: '',
+    givenName: '履癸',
+    reignStart: -1589,
+    reignEnd: -1559
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '成汤',
+    reignStart: -1661,
+    reignEnd: -1650
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '外丙',
+    reignStart: -1649,
+    reignEnd: -1648
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '仲壬',
+    reignStart: -1647,
+    reignEnd: -1646
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '太甲',
+    reignStart: -1645,
+    reignEnd: -1634
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '沃丁',
+    reignStart: -1633,
+    reignEnd: -1615
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '小庚',
+    reignStart: -1614,
+    reignEnd: -1610
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '小甲',
+    reignStart: -1609,
+    reignEnd: -1593
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '雍己',
+    reignStart: -1592,
+    reignEnd: -1581
+  },
+  {
+    state: '商',
+    title: '太宗',
+    givenName: '太戊',
+    reignStart: -1580,
+    reignEnd: -1506
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '仲丁',
+    reignStart: -1505,
+    reignEnd: -1495
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '外壬',
+    reignStart: -1494,
+    reignEnd: -1480
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '河亶甲',
+    reignStart: -1479,
+    reignEnd: -1471
+  },
+  {
+    state: '商',
+    title: '中宗',
+    givenName: '祖乙',
+    reignStart: -1470,
+    reignEnd: -1421
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '祖辛',
+    reignStart: -1420,
+    reignEnd: -1405
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '沃甲',
+    reignStart: -1404,
+    reignEnd: -1380
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '祖丁',
+    reignStart: -1379,
+    reignEnd: -1348
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '南庚',
+    reignStart: -1347,
+    reignEnd: -1319
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '阳甲',
+    reignStart: -1318,
+    reignEnd: -1302
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '盘庚',
+    reignStart: -1301,
+    reignEnd: -1274
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '小辛',
+    reignStart: -1273,
+    reignEnd: -1271
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '小乙',
+    reignStart: -1270,
+    reignEnd: -1261
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '武丁',
+    reignStart: -1260,
+    reignEnd: -1202
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '祖庚',
+    reignStart: -1201,
+    reignEnd: -1191
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '祖甲',
+    reignStart: -1190,
+    reignEnd: -1158
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '廪辛',
+    reignStart: -1157,
+    reignEnd: -1154
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '庚丁',
+    reignStart: -1153,
+    reignEnd: -1146
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '武乙',
+    reignStart: -1145,
+    reignEnd: -1111
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '太丁',
+    reignStart: -1110,
+    reignEnd: -1095
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '帝乙',
+    reignStart: -1094,
+    reignEnd: -1086
+  },
+  {
+    state: '商',
+    title: '',
+    givenName: '帝辛',
+    reignStart: -1085,
+    reignEnd: -1046
+  },
+  {
     state: '魯',
     title: '魯公伯禽',
     givenName: '姬伯禽',

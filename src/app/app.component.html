@@ -1,9 +1,13 @@
-<t-text [currentYear]="currentYear"
-        [startYear]="startYear"
-        [endYear]="endYear"
-        (selectYear)="timeline.markYear($event)"></t-text>
+<ia-navigation-bar>
+  <nav>
+    <a routerLink="zuo-zhuan"
+       routerLinkActive="active"
+       class="navigation-bar-link">左傳</a>
 
-<t-timeline #timeline
-            [startYear]="startYear"
-            [endYear]="endYear"
-            (setYear)="viewByYear($event)"></t-timeline>
+    <a routerLink="shi-jing"
+       routerLinkActive="active"
+       class="navigation-bar-link">詩經</a>
+  </nav>
+</ia-navigation-bar>
+
+<router-outlet></router-outlet>

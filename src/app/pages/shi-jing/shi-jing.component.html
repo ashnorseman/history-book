@@ -1,0 +1,6 @@
+<section *ngFor="let poem of textWithSound">
+  <h4>{{poem.title}}</h4>
+
+  <pre *ngFor="let paragraph of poem.content"
+       [innerHTML]="paragraph"></pre>
+</section>

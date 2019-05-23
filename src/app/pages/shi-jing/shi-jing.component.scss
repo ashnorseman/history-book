@@ -1,0 +1,44 @@
+/**
+ * 詩經
+ */
+
+@import "../../styles/variables";
+
+:host {
+  display: block;
+  overflow: auto;
+  padding: $size-24 calc((100% - #{$lg-break - $size-32}) / 2);
+}
+
+section {
+  margin: 0 auto;
+  width: max-content;
+}
+
+h3,
+h4 {
+  margin: 2em 0 1em;
+}
+
+pre {
+  line-height: 2;
+}
+
+:host /deep/ .char {
+  display: inline-block;
+  text-align: center;
+  width: 3em;
+}
+
+:host /deep/ rt {
+  @include text-body('xs');
+
+  letter-spacing: 0;
+}
+
+@media (max-width: $lg-break) {
+
+  :host {
+    padding: $size-24;
+  }
+}

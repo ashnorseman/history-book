@@ -113,7 +113,7 @@
 // Media query
 // ---------------------------
 
-@media (max-device-width: $lg-break) {
+@media (max-width: $lg-break) {
 
   .state-selector {
     display: none;

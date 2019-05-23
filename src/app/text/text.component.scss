@@ -75,13 +75,19 @@ pre {
 // ---------------------------
 
 :host.xiaozhuan {
-  font-family: '北师大说文小篆', sans-serif;
+  font-family: 'FZXiaoZhuanTi-S13', sans-serif;
   font-size: 300%;
 
   h2,
   h3,
   h4 {
     font-weight: 400;
+    transform-origin: 0 0;
+    transform: scale(1.5);
+  }
+
+  /deep/ rt {
+    font-family: $default-font-family;
   }
 }
 
@@ -89,11 +95,10 @@ pre {
 // Media query
 // ---------------------------
 
-@media (max-device-width: $lg-break) {
+@media (max-width: $lg-break) {
 
   :host {
     display: block;
     padding: $size-24;
   }
 }
-
