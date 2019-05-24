@@ -5,7 +5,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { shijing } from '../../data/shijing';
-import { sounds } from '../../data/sounds';
+// import { sounds } from '../../data/sounds';
 import { IPoem } from '../../interfaces/i-poem';
 
 @Component({
@@ -22,18 +22,20 @@ export class ShiJingComponent {
       return {
         ...poem,
         content: poem.content.map(paragraph => {
-          return paragraph
-            .split('')
-            .map(char => {
-              const sound = sounds.find(item => item.char === char);
-
-              if (sound) {
-                return `<span class="char"><ruby>${char}<rt>${sound.sound}</rt></ruby></span>`;
-              } else {
-                return char;
-              }
-            })
-            .join('');
+          return (
+            paragraph
+              .split('')
+              // .map(char => {
+              //   const sound = sounds.find(item => item.char === char);
+              //
+              //   if (sound) {
+              //     return `<span class="char"><ruby>${char}<rt>${sound.sound}</rt></ruby></span>`;
+              //   } else {
+              //     return char;
+              //   }
+              // })
+              .join('')
+          );
         })
       };
     });
