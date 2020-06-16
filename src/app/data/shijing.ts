@@ -123,7 +123,7 @@ export const shijing: IPoem[] = [
     subCategory: '周南',
     title: '漢廣',
     content: [
-      `南有喬木、不可休息。
+      `南有喬木、不可休思。
 漢有游女、不可求思。
 漢之廣矣、不可泳思。
 江之永矣、不可方思。`,
